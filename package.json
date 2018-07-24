@@ -19,6 +19,7 @@
     "sass-loader": "^7.0.3",
     "vue-template-compiler": "^2.5.16"
   },
+  "author": "Rachel Chan",
   "eslintConfig": {
     "root": true,
     "env": {

@@ -9,7 +9,7 @@ npm install -g @vue/cli
 vue create my-project
 ```
 安装vue-cli 后 ```cd```到要创建项目的地方 执行```vue create my-project```  其中```my-project```为文件名
-<br />
+
 可参考 [文档](https://cli.vuejs.org/guide/creating-a-project.html#vue-create)
 
 #### vue-cli中使用sass

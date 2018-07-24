@@ -1,0 +1,42 @@
+@import "common";
+
+.logo_box {
+    width: d-vw(200px);
+    img {
+        width: 100%;
+    }
+}
+
+header {
+    width: 100%;
+    height: d-vw(90px);
+    position: fixed;
+    background-color: #fff;
+    nav {
+        width: d-vw(1100px);
+        height: 100%;
+        margin: 0 auto;
+    }
+    ul {
+        float: right;
+    }
+    li {
+        float: left;
+        line-height: d-vw(90px);
+        font-size: d-vw(24px);
+        margin-right: d-vw(30px);
+    }
+    li:last-child {
+        margin-right: 0;
+    }
+    a {
+        color: #777;
+        text-decoration: none;
+    }
+    a:hover {
+        color: #4fc1ba;
+    }
+    .router-link-exact-active {
+        color: #4fc1ba;
+    }
+}

@@ -1,7 +1,7 @@
 @import "common";
-
 .logo_box {
-    width: d-vw(200px);
+    width: d-vw(92px);
+    top: d-vw(18px);
     img {
         width: 100%;
     }
@@ -12,8 +12,9 @@ header {
     height: d-vw(90px);
     position: fixed;
     background-color: #fff;
+    z-index: 999;
     nav {
-        width: d-vw(1100px);
+        width: d-vw(1200px);
         height: 100%;
         margin: 0 auto;
     }

@@ -3,12 +3,11 @@
 		<xheader></xheader>
 		<div class="div2">222</div>
 	</div>
-	
+
 </template>
 
 <style lang="scss">
 	@import "../assets/css/public";
-	@import "../assets/css/header";
 	.div2 {
 		width: 500px;
 		height: 1000px;
@@ -19,15 +18,15 @@
 	}
 </style>
 
-<script>	
+<script>
 	import xheader from "../components/header.vue";
 	export default {
 		components: {
-		    xheader
+			xheader
 		},
 		data() {
 			return {
-				
+
 			};
 		},
 		methods: {

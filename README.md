@@ -12,6 +12,9 @@ vue create my-project
 
 可参考 [文档](https://cli.vuejs.org/guide/creating-a-project.html#vue-create)
 
+```npm run serve```用于打开服务器
+```npm run build```用于打包项目
+
 #### vue-cli中使用sass
 则需安装```sass-loader```依赖
 ```

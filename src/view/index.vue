@@ -29,7 +29,7 @@
 					<div class="swiper-button-next swiper-button-white" slot="button-next"></div>
 				</swiper>
 			</div>
-			<div class="txt_box" style="height: 150px;" v-inview:animate="'fadeInUp'"></div>
+			<div class="txt_box" style="height: 150px;"></div>
 			<div class="contact_box" v-inview:animate="'fadeInUp'">
 				<p class="title-txt">2018/2019赛季阵容</p>
 				<ul class="clearfix">

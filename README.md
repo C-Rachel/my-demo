@@ -37,6 +37,14 @@ npm install sass-loader node-sass --save-dev
 </style>
 ```
 
+如果执行以下命令后，重装再去```node-sass```
+```
+npm uninstall node-sass
+```
+报错提示有```.node-sass.DELETE``` 去到```node_modules```删除该文件 再重新执行下载命令即可
+
+其他node-sass安装失败的原因及解决办法，可参考[文章](https://segmentfault.com/a/1190000010984731)
+
 #### npm install报错
 ```
 npm ERR! Unexpected token < in JSON at position xxx

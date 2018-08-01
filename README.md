@@ -37,7 +37,7 @@ npm install sass-loader node-sass --save-dev
 </style>
 ```
 
-如果执行以下命令后，重装再去```node-sass```
+如果执行以下命令后，再去重装node-sass时有可能会报错
 ```
 npm uninstall node-sass
 ```

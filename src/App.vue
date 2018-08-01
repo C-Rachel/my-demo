@@ -30,6 +30,6 @@ li {
   margin: 0;
   padding: 0;
 }
-/*$use-fadeInUp: true;*/
-/*@import '../animate-sass/animate';*/
+$use-fadeInUp: true;
+@import '~animate-sass/animate';
 </style>

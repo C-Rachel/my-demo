@@ -4,7 +4,7 @@
   </div>
 </template>
 
-<style>
+<style lang="scss">
 #app {
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -30,4 +30,6 @@ li {
   margin: 0;
   padding: 0;
 }
+/*$use-fadeInUp: true;*/
+/*@import '../animate-sass/animate';*/
 </style>

@@ -29,7 +29,9 @@
 					<div class="swiper-button-next swiper-button-white" slot="button-next"></div>
 				</swiper>
 			</div>
-			<div class="contact_box">
+			<div class="txt_box" style="height: 150px;" v-inview:animate="'fadeInUp'"></div>
+			<div class="contact_box" v-inview:animate="'fadeInUp'">
+				<p class="title-txt">2018/2019赛季阵容</p>
 				<ul class="clearfix">
 					<li class="text-center">
 						<p class="member_pic"><img src="../assets/img/153171866164394.jpg" /></p>
@@ -55,7 +57,7 @@
 			</div>
 			
 		</div>
-
+		<xfooter></xfooter>
 	</div>
 </template>
 
@@ -87,6 +89,7 @@
 	.wrap {
 		width: d-vw(1200px);
 		margin: 0 auto;
+		padding-bottom: 200px;
 	}
 	
 	.contact_box {
@@ -116,14 +119,35 @@
 		img {
 			width: 100%;
 		}
+		.title-txt {
+			color: gray;
+			font-size: d-vw(20px);
+			margin: d-vw(15px) 0;
+		}
+	}
+	.txt_box {
+		width: 100%;
+		padding: d-vw(20px);
+		background-color: #eee;
+		border-left: 6px solid #615d75;
+		box-sizing: border-box;
+		margin-top: d-vw(80px);
 	}
 </style>
 
 <script>
 	import xheader from "../components/header.vue";
+	import xfooter from "../components/footer.vue";
+	import Inview from "vueinview";
+	import Vue from "vue";
+	
+	Vue.use(Inview);
+	Inview.offset(150);
+	
 	export default {
 		components: {
-			xheader
+			xheader,
+			xfooter
 		},
 		data() {
 			return {

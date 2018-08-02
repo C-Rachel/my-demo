@@ -29,7 +29,7 @@ npm install sass-loader node-sass --save-dev
 	div {
 		width: 50px;
 		height: 50px;
-		background-color: silver;
+		background-color: seagreen;
 		p {
 			color: #42B983;
 		}

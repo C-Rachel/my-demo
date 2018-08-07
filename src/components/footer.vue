@@ -11,4 +11,7 @@
 </script>
 
 <style>
+	footer {
+		/*font-family: FangSong;*/
+	}
 </style>

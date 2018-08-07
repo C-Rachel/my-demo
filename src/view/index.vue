@@ -29,7 +29,7 @@
 					<div class="swiper-button-next swiper-button-white" slot="button-next"></div>
 				</swiper>
 			</div>
-			<div class="txt_box" style="height: 150px;"></div>
+			<div class="txt_box"></div>
 			<div class="contact_box" v-inview:animate="'fadeInUp'">
 				<p class="title-txt">2018/2019赛季阵容</p>
 				<ul class="clearfix">
@@ -55,7 +55,7 @@
 					</li>
 				</ul>
 			</div>
-			
+
 		</div>
 		<xfooter></xfooter>
 	</div>
@@ -63,7 +63,6 @@
 
 <style lang="scss" scoped>
 	@import "../assets/css/public";
-	
 	.swiper-container {
 		width: d-vw(1200px);
 	}
@@ -125,6 +124,7 @@
 			margin: d-vw(15px) 0;
 		}
 	}
+	
 	.txt_box {
 		width: 100%;
 		padding: d-vw(20px);
@@ -132,6 +132,61 @@
 		border-left: 6px solid #615d75;
 		box-sizing: border-box;
 		margin-top: d-vw(80px);
+		height: 150px;
+	}
+	
+	@media (max-width: 768px) {
+		.swiper-container {
+			width: m-vw(610px);
+		}
+		.swiper_box {
+			padding-top: m-vw(90px);
+			font-size: 0;
+		}
+		.swiper-slide img {
+			width: 100%;
+		}
+		.swiper-slide {
+			width: m-vw(610px);
+		}
+		.swiper-slide p {
+			width: m-vw(610px);
+			margin: 0 auto;
+		}
+		.wrap {
+			width: m-vw(610px);
+			margin: 0 auto;
+			padding-bottom: 200px;
+		}
+		.contact_box {
+			width: 100%;
+			padding: m-vw(80px) 0;
+			li {
+				float: none;
+				width: m-vw(350px);
+				margin: 0 auto m-vw(50px);
+				padding-bottom: m-vw(30px);
+				font-size: m-vw(18px);
+			}
+			li:nth-child(4n) {
+				margin: 0 auto;
+			}
+			.member_pic {
+				width: m-vw(200px);
+				margin: m-vw(20px) auto m-vw(30px);
+			}
+			.title-txt {
+				font-size: m-vw(30px);
+				margin: 0 0 m-vw(50px);
+				text-align: center;
+			}
+		}
+		.txt_box {
+			width: 100%;
+			padding: m-vw(20px);
+			margin-top: m-vw(50px);
+			height: m-vw(200px);
+		}
 	}
 </style>
 
@@ -140,10 +195,10 @@
 	import xfooter from "../components/footer.vue";
 	import Inview from "vueinview";
 	import Vue from "vue";
-	
+
 	Vue.use(Inview);
 	Inview.offset(150);
-	
+
 	export default {
 		components: {
 			xheader,
@@ -155,7 +210,7 @@
 					slidesPerView: 1,
 					spaceBetween: 30,
 					loop: true,
-					slidesPerView: "auto",
+					SlidesPerView: 'auto',
 					pagination: {
 						el: '.swiper-pagination',
 						clickable: true

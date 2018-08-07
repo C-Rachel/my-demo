@@ -22,3 +22,20 @@ li {
 .text-center {
     text-align: center;
 }
+
+.mobile-view {
+    display: none;
+}
+
+.pc-view {
+    display: inherit;
+}
+
+@media (max-width: 768px) {
+    .mobile-view {
+        display: inherit;
+    }
+    .pc-view {
+        display: none;
+    }
+}

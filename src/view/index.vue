@@ -119,7 +119,7 @@
 			width: 100%;
 		}
 		.title-txt {
-			color: gray;
+			color: #777;
 			font-size: d-vw(20px);
 			margin: d-vw(15px) 0;
 		}

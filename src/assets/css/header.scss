@@ -50,15 +50,13 @@ header {
         }
         .nav_icon {
             width: m-vw(60px);
-            float: right;
-            margin: m-vw(16px) m-vw(80px) 0 0;
+            margin: m-vw(16px) auto 0;
             img {
                 width: 100%;
             }
         }
         ul {
             float: none;
-            padding-top: m-vw(90px);
         }
         li {
             float: none;

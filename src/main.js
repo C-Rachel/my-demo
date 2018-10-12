@@ -1,4 +1,6 @@
 import Vue from 'vue'
+import VueHttp from 'vue-resource'
+import axios from 'axios'
 import App from './App.vue'
 import router from './router'
 import VueAwesomeSwiper from 'vue-awesome-swiper'

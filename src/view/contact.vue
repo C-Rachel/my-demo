@@ -71,6 +71,13 @@
 			}).catch(function(json) {
 				console.log(json.errmsg);
 			});
+			
+// 			this.$http.get('/static/data.json').then(function(res){
+// 				console.log(res);
+// 			}).catch(function(json) {
+// 				console.log(json.errmsg);
+// 			});
+			
 		}
 	};
 </script>

@@ -2,7 +2,7 @@
 	<div>
 		<xheader></xheader>
 		<div class="div2">
-			<p>关于input监听计算</p>
+			<p class="titlep">关于input监听计算</p>
 			<form>
 				<div class="group-box">
 					<label>Total</label>
@@ -44,6 +44,12 @@
 		margin: 0 auto;
 		padding-top: d-vw(90px);
 		padding-left: 20px;
+	}
+	.titlep {
+		font-size: 26px;
+		color: #fff;
+		margin: 30px 0;
+		text-align: center;
 	}
 	label {
 		display: block;

@@ -83,9 +83,9 @@
 					"aaa": 0,
 				},	
 				lazy: {
-					"lllazy": 0,
-					"bb": 0,
-					"zz": 0,
+					"lllazy": "0.00",
+					"bb": "0.00",
+					"zz": "0.00",
 				}
 			};
 		},
@@ -96,13 +96,11 @@
 			getData: function(){
 				var self = this;				
 				self.meta.total = parseInt(self.meta.ttt)+parseInt(self.meta.aaa);
-				
-				// 如果数据为小数则可以用parseFloat()，保留小数位数可以使用toFixed()
-				// 例如需要保留两位小数： var sum = (parseFloat(xx)+parseFloat(zz)).toFixed(2) 四舍五入保留
 			},
 			getA: function(){
-				var self = this;				
-				self.lazy.lllazy = parseInt(self.lazy.bb)+parseInt(self.lazy.zz);
+				var self = this;	
+				// 如果数据为小数则可以用parseFloat()，保留小数位数可以使用toFixed() 四舍五入保留
+				self.lazy.lllazy = (parseFloat(self.lazy.bb)+parseFloat(self.lazy.zz)).toFixed(2);				
 			}
 		},
 		created: function(){

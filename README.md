@@ -54,4 +54,4 @@ npm ERR! Unexpected token < in JSON at position xxx
 |  Other  |   Other   |   Other   |
 | ---------- | -----------  | -----------  |
 | [vue-scrollto](https://www.npmjs.com/package/vue-scrollto) | [node-sass安装失败](https://segmentfault.com/a/1190000010984731) | [npm install报错](https://github.com/npm/npm/issues/17340) |
-| [Vue](https://cli.vuejs.org/) | [vue-awesome-swiper](https://github.com/MMHK/vue-awesome-swiper) | [vue-datepicker)](https://github.com/MMHK/vue-datepicker) |
+| [Vue](https://cli.vuejs.org/) | [vue-awesome-swiper](https://github.com/MMHK/vue-awesome-swiper) | [vue-datepicker](https://github.com/MMHK/vue-datepicker) |

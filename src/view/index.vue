@@ -29,8 +29,11 @@
 					<div class="swiper-button-next swiper-button-white" slot="button-next"></div>
 				</swiper>
 			</div>
+			<p class="scrollBtn">
+				<a href="#con" v-scroll-to="'#con'">滚动 V</a>
+			</p>			
 			<div class="txt_box"></div>
-			<div class="contact_box" v-inview:animate="'fadeInUp'">
+			<div class="contact_box" id="con" v-inview:animate="'fadeInUp'">
 				<p class="title-txt">2018/2019赛季阵容</p>
 				<ul class="clearfix">
 					<li class="text-center">
@@ -131,8 +134,20 @@
 		background-color: #eee;
 		border-left: 6px solid #615d75;
 		box-sizing: border-box;
-		margin-top: d-vw(80px);
+		margin-top: d-vw(50px);
 		height: 150px;
+	}
+	
+	.scrollBtn {
+		text-align: center;
+		width: d-vw(80px);
+		padding: d-vw(10px) 0;
+		margin: d-vw(30px) auto 0;
+		background-color: cornflowerblue;
+		a {
+			color: #fff;
+			text-decoration: none;
+		}
 	}
 	
 	@media (max-width: 768px) {
@@ -194,10 +209,15 @@
 	import xheader from "../components/header.vue";
 	import xfooter from "../components/footer.vue";
 	import Inview from "vueinview";
+	import VueScrollTo from "vue-scrollto";
 	import Vue from "vue";
-
+	
 	Vue.use(Inview);
 	Inview.offset(150);
+	
+	Vue.use(VueScrollTo, {
+		container: "body"
+	});
 
 	export default {
 		components: {

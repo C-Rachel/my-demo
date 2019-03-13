@@ -43,7 +43,6 @@ npm uninstall node-sass
 ```
 报错提示有```.node-sass.DELETE``` 去到```node_modules```删除该文件 再重新执行下载命令即可
 
-其他node-sass安装失败的原因及解决办法，可参考[文章](https://segmentfault.com/a/1190000010984731)
 
 #### npm install报错
 ```
@@ -51,11 +50,10 @@ npm ERR! Unexpected token < in JSON at position xxx
 ```
 可尝试```rm package-lock.json``` 再 ```npm install```
 
-参考[文档](https://github.com/npm/npm/issues/17340)
 
 ### Other
 
 |  Other  |   Other   |   Other   |
 | ---------- | -----------  | -----------  |
-| [vue-scrollto](https://www.npmjs.com/package/vue-scrollto) |  |  |
+| [vue-scrollto](https://www.npmjs.com/package/vue-scrollto) | [node-sass安装失败](https://segmentfault.com/a/1190000010984731) | [npm install报错](https://github.com/npm/npm/issues/17340) |
  

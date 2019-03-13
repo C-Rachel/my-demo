@@ -1,6 +1,6 @@
 # VUE
 
-这个项目基于 [vue-cli](https://cli.vuejs.org/) 创建 ， 可参考[中文文档](https://github.com/vuejs/vue-docs-zh-cn/tree/master/vue-cli)
+这个项目基于``vue-cli``创建
 
 #### 安装vue-cli
 
@@ -8,9 +8,7 @@
 npm install -g @vue/cli
 vue create my-project
 ```
-安装vue-cli 后 ```cd```到要创建项目的地方 执行```vue create my-project```  其中```my-project```为文件名
-
-可参考 [文档](https://cli.vuejs.org/guide/creating-a-project.html#vue-create)
+安装vue-cli 后 ```cd```到要创建项目的地方 执行```vue create my-project```  其中```my-project```为文件名,可参考 [文档](https://cli.vuejs.org/guide/creating-a-project.html#vue-create)
 
  `npm run serve`用于打开服务器
  <br />
@@ -56,4 +54,4 @@ npm ERR! Unexpected token < in JSON at position xxx
 |  Other  |   Other   |   Other   |
 | ---------- | -----------  | -----------  |
 | [vue-scrollto](https://www.npmjs.com/package/vue-scrollto) | [node-sass安装失败](https://segmentfault.com/a/1190000010984731) | [npm install报错](https://github.com/npm/npm/issues/17340) |
- 
+| [Vue](https://cli.vuejs.org/) |  |  |

@@ -55,7 +55,7 @@ npm ERR! Unexpected token < in JSON at position xxx
 
 ### Other
 
-|  Other  |   Other   |
+|  Other  |   Other   |   Other   |
 | ---------- | -----------  | -----------  |
-| [vue-scrollto](https://www.npmjs.com/package/vue-scrollto) | ----------- | -----------  |
+| [vue-scrollto](https://www.npmjs.com/package/vue-scrollto) |  |  |
  

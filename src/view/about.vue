@@ -29,6 +29,17 @@
 					<label>B</label>
 					<input v-model.lazy="lazy.zz" />
 				</div>
+				
+				<div class="group-box">
+					<label>username</label>
+					<input v-model="username" />
+				</div>
+				<div class="group-box">
+					<label>username</label>
+					<input type="password" v-model="userpwd" />
+				</div>
+				<!-- <button @click="getMsg()">UpUp</button> -->
+				
 			</form>
 			<div class="question-box" v-if="pageList[0]">
 				<div class="btnBox checkbox-btn-group btn-group clearfix">
@@ -230,6 +241,8 @@
 					1: "",
 					2: ""
 				},
+				username: '',
+				userpwd: ''
 			};
 		},
 		methods: {
@@ -245,7 +258,19 @@
 				// 如果数据为小数则可以用parseFloat()，保留小数位数可以使用toFixed() 四舍五入保留
 				self.lazy.lllazy = (parseFloat(self.lazy.bb)+parseFloat(self.lazy.zz)).toFixed(2);				
 			},
-			getCheckbox() {
+			
+			getMsg: function() {
+				this.$http.post('./about', {
+					'user_name': this.username,
+					'user_pwd': this.userpwd
+				}).then(res => {
+					
+				}).catch(res => {
+					
+				})
+			},
+			
+			getCheckbox: function() {
 				var self = this;
 				setTimeout(function(){
 					self.isDisabled = false;
@@ -256,14 +281,13 @@
 					}
 				}, 0)
 			},
-			next(num) {				
+			next: function(num) {				
 				this.pageList[1 + num] = 1;
 				this.pageList[num] = 0;
 				this.isDisabled = true;
 				this.noNext = true;
 			},
-			getRadio() {				
-				var self = this;
+			getRadio: function() {				
 				this.isDisabled = false;
 				this.noNext = false;
 			}
